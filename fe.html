@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html data-theme="cupcake">
+  <head>
+    <title>Page Replacement Algorithms</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.4/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1 class="text-3xl mt-10 font-bold text-center">
+      Page Replacement Algorithms
+    </h1>
+    <div class="p-4 mx-auto gap-4 text-center content-evenly">
+      <!-- <h5 class="text text-base font-semibold mb-2">Reference String:</h5> -->
+      <input
+        id="ref-string"
+        type="text"
+        placeholder="1 2 3 ..."
+        class="input input-bordered input-secondary input-sm w-full max-w-xs"
+      />
+
+      <select
+        id="select-algorithm"
+        class="select select-secondary select-sm w-full max-w-xs"
+      >
+        <option disabled selected value="none">Select an algorithm</option>
+        <option value="FIFO">FIFO</option>
+        <option value="LRU">LRU</option>
+        <option value="MRU">MRU</option>
+        <option value="LFU">LFU</option>
+        <option value="MFU">MFU</option>
+        <option value="2ND">Second chance</option>
+      </select>
+
+      <select
+        id="num-of-frames"
+        class="select select-secondary select-bordered select-sm w-full max-w-xs"
+      >
+        <option disabled selected value="none">Number of frames</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <button
+        id="visualization"
+        class="btn btn-sm btn-secondary mx-auto my-5"
+      >
+        Visualize
+      </button>
+      <!-- <h2 class="text-xl font-semibold mb-2 mt-10"></h2> -->
+      <div id="visualize" class="overflow-x-auto"></div>
+      <!-- <h5 class="text text-base font-semibold mb-2">Page Faults:</h5> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
