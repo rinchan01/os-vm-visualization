@@ -1,1 +1,2 @@
-# Bonus point for visualize 6 page replacement algorithms: FIFO, LRU, MRU, LFU, MFU, Second chance. (2324II_INT2214_22)
+# The visualization of 6 page-replacement algorithms
+This repository is created for the homework week 10 for Operating System (2324II_INT2214_22). It is the implementation of 6 popular page replacement algorithms: FIFO, LRU, MRU, LFU, MFU, Second chance with the frame capacity ranged from 1-10 frames with simple GUI. Type in a reference string in correct format: numbers separated by space. (i.e. "1 2 3 4 ..."). If the reference string input left blank, it will automatically randomly generate a reference string with 20 numbers.
